@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stocks</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Growth Checker</h1>
+    <p class="description">
+      At growth, we calculate if you are making money or losing it
+    </p>
+
+    <main>
+      <div class="split left">
+        <label for="initial-price">Initial Price</label>
+        <input
+          type="number"
+          id="initial-price"
+          required
+          placeholder="Enter initial price of stocks"
+        />
+        <div class="error" id="iptext">Invalid Initial Price</div>
+        <!-- <label for="quantity">Stock Quantity</label>
+        <input
+          type="number"
+          id="stock-quantity"
+          required
+          placeholder="Enter quantity of stocks bought"
+        />
+        <div class="error" id="quantityText">Invalid Stock Quantity</div> -->
+        <label for="selling-price">Selling Price</label>
+        <input
+          type="number"
+          id="selling-price"
+          required
+          placeholder="Enter selling price of stocks"
+        />
+        <div class="error" id="sptext">Invalid Selling Price</div>
+        <button class="btn-style" id="submitButton">Check My Growth</button>
+      </div>
+      <div class="split right">
+        <div id="output-text" class="output-text-style">
+          Growth result will appear here
+        </div>
+        <img
+          src="./PROFIT.webp"
+          class="profit-img"
+          id="profit-image"
+          alt="profit image"
+        />
+        <img
+          src="./SAD LOSS.jpg"
+          class="sad-loss"
+          id="loss-image"
+          alt="loss image"
+        />
+        <img
+          src="./okaynow.png"
+          class="stagnant-img"
+          id="stagnant-image"
+          alt="stagnant-image"
+        />
+      </div>
+    </main>
+    <script src="logic.js"></script>
+  </body>
+</html>
